@@ -1,2 +1,2 @@
-#My portfoli0
-Mobile header section
+#My portfolio
+This is my portfolio website
