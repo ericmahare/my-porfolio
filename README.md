@@ -2,7 +2,7 @@
 
 # Project Name
 
-> My-portfolio.
+> My-portfolio
 
 ## Built With
 
