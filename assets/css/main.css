@@ -52,13 +52,14 @@ section */
   width: 100%;
   background-color: var(--black);
   padding: 24px;
-  position: relative;
   background-image: url('../images/Illustration.png');
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: right 3px bottom -45px;
 }
 
 .headline_primary_text {
+  display: flex;
+  flex-direction: column;
   font-family: "Crete Round", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -86,14 +87,15 @@ section */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  width: 92%;
   line-height: 24px;
   color: var(--main-white);
   margin: 12px 0;
-  z-index: 5;
 }
 
 .social_media {
   width: 200px;
+  margin-top: 20px;
 }
 
 .social_media ul {
