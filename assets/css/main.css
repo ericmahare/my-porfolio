@@ -60,8 +60,6 @@ section */
 }
 
 .headline_primary_text {
-  display: flex;
-  flex-direction: column;
   font-family: "Crete Round", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
