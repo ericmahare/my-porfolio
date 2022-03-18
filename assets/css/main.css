@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Lato:wght@100&family=Open+Sans:wght@300&family=Poppins&family=Roboto:ital,wght@0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Lato:wght@100&family=Open+Sans:wght@300&family=Poppins&family=Roboto:ital,wght@0,700;1,100&display=swap');
 
 * {
   margin: 0;
@@ -6,16 +6,18 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 12px;
-}
-
 /* variables */
 :root {
   --dark-grey: #3c3a39;
   --black: #1c1a19;
   --main-white: #fff;
+  --bg-primary-color: #ff6b00;
+}
+
+body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 12px;
+  color: var(--black);
 }
 
 /* header section */
@@ -32,7 +34,7 @@ body {
 #header a {
   text-decoration: none;
   color: var(--main-white);
-  font-family: "Roboto", "Helvetica", sans-serif;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -60,18 +62,18 @@ section */
 }
 
 .headline_primary_text {
-  font-family: "Crete Round", "Helvetica", sans-serif;
+  font-family: 'Crete Round', 'Helvetica', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  color: #ff6b00;
+  color: var(--bg-primary-color);
   margin-top: 90px;
 }
 
 .headline_supporting_text {
-  font-family: "Roboto", "Helvetica", sans-serif;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -81,7 +83,7 @@ section */
 }
 
 .headline_description_text {
-  font-family: "Poppins", "Helvetica", sans-serif;
+  font-family: 'Poppins', 'Helvetica', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -104,3 +106,277 @@ section */
 }
 
 /* end of headline section */
+
+/* works section */
+#works {
+  width: 90%;
+  margin: auto;
+}
+
+#works .section_header {
+  font-family: 'Crete Round', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.fworks_card_container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.first_card_header {
+  width: 100%;
+}
+
+.first_card_header img {
+  width: 100%;
+}
+
+.first_card_title {
+  font-family: 'Crete Round', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 12px 0;
+}
+
+.first_card_description {
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 12px 0;
+}
+
+.first_card_skill_list {
+  display: flex;
+  margin: 12px 0;
+  column-gap: 12px;
+  list-style-type: none;
+}
+
+.first_card_skill_list li {
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.first_card_btn {
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  width: 124px;
+  border: none;
+  height: 48px;
+  margin: 12px 0;
+  color: var(--main-white);
+  background-color: var(--bg-primary-color);
+}
+
+.card {
+  color: var(--main-white);
+  width: 100%;
+  height: 386px;
+  background-image: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url(../images/card_bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      margin: 12px 0;
+}
+
+.inner_card_container {
+  padding: 40px 30px 0 20px;
+}
+
+.card_title {
+  font-family: 'Crete Round', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 12px 0;
+}
+
+.card_description {
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card_skill_list {
+  display: flex;
+  column-gap: 12px;
+  list-style-type: none;
+  margin: 12px 0;
+}
+
+.card_skill_list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.card_btn {
+  justify-self: flex-end;
+  height: 48px;
+  display: block;
+  border: none;
+  color: var(--main-white);
+  width: 100%;
+  position: absolute;
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  bottom: 0;
+  background-color: var(--bg-primary-color);
+}
+
+/* end of works section */
+
+/* About me section */
+#about_me {
+  margin: 150px 0;
+  width: 100%;
+  min-height: 1901px;
+  color: var(--main-white);
+  background-color: var(--black);
+}
+
+.about_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90vw;
+  margin: auto;
+  padding-top: 120px;
+}
+
+.about_me_title {
+  font-family: 'Crete Round', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin: 24px 0;
+}
+
+.about_info {
+  position: relative;
+  height: 420px;
+  background-image: url(../images/illustration-about-me-mobile.png);
+  background-repeat: no-repeat;
+  background-position: right bottom 8px;
+}
+
+.about_description {
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  margin: 24px 0;
+}
+
+.about_btn {
+  width: 161px;
+  padding: 12px;
+  color: var(--main-white);
+  background-color: var(--bg-primary-color);
+  border: none;
+  height: 48px;
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.line {
+  background-color: var(--main-white);
+  width: 90%;
+  margin: 0 auto;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+}
+
+/* about languages section */
+.about_languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.lang_title {
+  display: flex;
+  row-gap: 17px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'inter', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.lang_title span {
+  align-self: flex-end;
+}
+
+.lang_title h4 {
+  margin-left: 10px;
+}
+
+.skills {
+  list-style-type: none;
+  text-align: center;
+}
+
+.skills li {
+  margin: 0 12px;
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+/* about languages section */
+
+/* end of about me section */
