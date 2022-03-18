@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# My Portfolio
 
-> My-portfolio
+> This is my portfolio website for showcasing my work
 
 ## Built With
 
