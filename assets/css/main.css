@@ -155,8 +155,6 @@ section */
 }
 
 .first_card_skill_list {
-  display: flex;
-  margin: 12px 0;
   column-gap: 12px;
   list-style-type: none;
 }
@@ -169,6 +167,9 @@ section */
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 12px;
 }
 
 .first_card_btn {
@@ -184,6 +185,8 @@ section */
   color: var(--main-white);
   background-color: var(--bg-primary-color);
   cursor: pointer;
+  display: block;
+  clear: both;
 }
 
 .first_card_btn:hover {
