@@ -458,6 +458,14 @@ textarea {
   padding: 12px;
   cursor: pointer;
   align-self: center;
+  border: 1px solid #ff6b00;
+}
+
+.contact_form button:hover {
+  border: 1px solid var(--bg-primary-color);
+  color: #f55800;
+  background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 .underline {
