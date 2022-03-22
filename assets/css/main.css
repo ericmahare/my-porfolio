@@ -200,10 +200,10 @@ section */
   width: 100%;
   height: 386px;
   background-image: linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
+    180.45deg,
+    rgba(38, 38, 38, 0) 0.75%,
+    rgba(38, 38, 38, 0.9) 61.94%
+  ),
     url(../images/card_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -410,13 +410,15 @@ section */
   width: 100%;
   min-height: 700px;
 }
+
 .contact {
   width: 85vw;
   margin: 0 auto;
   margin-bottom: 150px;
 }
+
 .contact_title {
-  font-family: 'Inter', helvetica;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -429,32 +431,43 @@ section */
   display: flex;
   flex-direction: column;
   row-gap: 42px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
 }
-.contact_form input,
+
+.contact_form input {
+  padding: 20px;
+  border: none;
+  outline: none;
+}
+
 textarea {
   padding: 20px;
   border: none;
   outline: none;
 }
-#name,
+
+#name {
+  border-bottom: 1px solid #dbd8d7;
+}
+
 #email {
   border-bottom: 1px solid #dbd8d7;
 }
+
 #message {
   background-color: #fbf8f7;
 }
+
 .contact_form button {
   font-weight: 700;
   font-size: 17px;
   width: 127px;
   background: var(--bg-primary-color);
-  border: none;
-  color: #ffffff;
+  color: #fff;
   padding: 12px;
   cursor: pointer;
   align-self: center;
@@ -464,28 +477,32 @@ textarea {
 .contact_form button:hover {
   border: 1px solid var(--bg-primary-color);
   color: #f55800;
-  background-color: #ffffff;
+  background-color: #fff;
   box-sizing: border-box;
 }
 
 .underline {
-  height: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   margin-bottom: 25px;
 }
+
 .footer_link_section ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
   column-gap: 20px;
 }
-.footer_link_section ul li a {
+
+.footer-link {
   text-decoration: none;
   color: var(--black);
 }
+
 .bottom_underline {
   width: 134px;
   height: 5px;
   margin: 25px auto;
   background-color: var(--black);
 }
+
 /* end of footer section */
