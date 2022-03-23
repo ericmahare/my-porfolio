@@ -155,8 +155,6 @@ section */
 }
 
 .first_card_skill_list {
-  display: flex;
-  margin: 12px 0;
   column-gap: 12px;
   list-style-type: none;
 }
@@ -169,6 +167,9 @@ section */
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 12px;
 }
 
 .first_card_btn {
@@ -184,6 +185,8 @@ section */
   color: var(--main-white);
   background-color: var(--bg-primary-color);
   cursor: pointer;
+  display: block;
+  clear: both;
 }
 
 .first_card_btn:hover {
@@ -273,7 +276,7 @@ section */
 #about_me {
   margin: 150px 0;
   width: 100%;
-  min-height: 1901px;
+  min-height: 1701px;
   color: var(--main-white);
   background-color: var(--black);
 }
@@ -396,3 +399,105 @@ section */
 /* about languages section */
 
 /* end of about me section */
+
+/* footer section */
+#footer {
+  width: 100%;
+  min-height: 700px;
+}
+
+.contact {
+  width: 85vw;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.contact_title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.contact_form {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 42px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.contact_form input {
+  padding: 20px;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  padding: 20px;
+  border: none;
+  outline: none;
+}
+
+#name {
+  border-bottom: 1px solid #dbd8d7;
+}
+
+#email {
+  border-bottom: 1px solid #dbd8d7;
+}
+
+#message {
+  background-color: #fbf8f7;
+}
+
+.contact_form button {
+  font-weight: 700;
+  font-size: 17px;
+  width: 127px;
+  background: var(--bg-primary-color);
+  color: #fff;
+  padding: 12px;
+  cursor: pointer;
+  align-self: center;
+  border: 1px solid #ff6b00;
+}
+
+.contact_form button:hover {
+  border: 1px solid var(--bg-primary-color);
+  color: #f55800;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.underline {
+  border: 1px solid #dfe1e6;
+  margin-bottom: 25px;
+}
+
+.footer_link_section ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  column-gap: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.bottom_underline {
+  width: 134px;
+  height: 5px;
+  margin: 25px auto;
+  background-color: var(--black);
+}
+
+/* end of footer section */
