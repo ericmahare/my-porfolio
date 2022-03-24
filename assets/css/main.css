@@ -76,7 +76,7 @@ section */
   margin-top: 90px;
   position: relative;
   animation: heading;
-  animation-duration: 3s;
+  animation-duration: 5s;
 }
 
 @keyframes heading {
@@ -98,7 +98,7 @@ section */
   color: #fff5e1;
   margin-top: 12px;
   animation-name: headingText;
-  animation-duration: 5s;
+  animation-duration: 7s;
 }
 
 @keyframes headingText {
@@ -782,7 +782,6 @@ textarea {
     order: 1;
     height: 100vh;
     flex-basis: 0.5rem;
-    margin-top: 80px;
   }
 
   .works_underline {
