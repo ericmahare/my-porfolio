@@ -41,8 +41,12 @@ body {
   line-height: 24px;
 }
 
-.nav_icon {
+.nav_bars {
   cursor: pointer;
+}
+
+.nav_list {
+  display: none;
 }
 
 /* end of header
@@ -113,14 +117,25 @@ section */
   margin: auto;
 }
 
-#works .section_header {
+.section_header {
+  display: flex;
+  margin: 74px 0;
+  column-gap: 40px;
+  align-items: center;
+}
+
+.section_header_text {
   font-family: 'Crete Round', 'Helvetica', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  text-align: center;
-  margin: 24px 0;
+}
+
+.works_underline {
+  height: 1px;
+  background-color: var(--black);
+  width: 70%;
 }
 
 .fworks_card_container {
@@ -199,7 +214,12 @@ section */
   color: var(--main-white);
   width: 100%;
   height: 386px;
-  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../images/card_bg.jpg);
+  background-image: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url(../images/card_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -281,6 +301,9 @@ section */
   background-color: var(--black);
 }
 
+.about_me_title-desktop {
+  display: none;
+}
 .about_container {
   display: grid;
   grid-template-columns: 1fr;
@@ -301,6 +324,7 @@ section */
 }
 
 .about_info {
+  width: 100%;
   position: relative;
   height: 420px;
   background-image: url(../images/illustration-about-me-mobile.png);
@@ -501,3 +525,135 @@ textarea {
 }
 
 /* end of footer section */
+
+/* media queries */
+@media only screen and (min-width: 768px) {
+  .nav_list {
+    display: flex;
+    column-gap: 25px;
+  }
+
+  .nav_bars {
+    display: none;
+  }
+
+  #header {
+    padding: 20px 100px;
+  }
+
+  #headline {
+    display: flex;
+    flex-direction: row;
+    background-image: url('../images/Illustration-desktop.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    height: 870px;
+  }
+
+  .headline_info {
+    order: 2;
+    flex-basis: 35vw;
+    height: 100vh;
+    align-self: center;
+  }
+
+  .social_media ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 1;
+    height: 100vh;
+    flex-basis: 0.5rem;
+  }
+
+  .first_card {
+    display: flex;
+    column-gap: 40px;
+  }
+
+  .works_card_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+    grid-auto-rows: 400px;
+  }
+
+  /* about section */
+  #about_me {
+    width: 100%;
+    min-height: 1201px;
+  }
+
+  #about_me p {
+    width: 40vw;
+  }
+
+  #about_me h3 {
+    width: 40vw;
+  }
+
+  .about_info {
+    height: 500px;
+    background-image: url(../images/Frame.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  .about_me_title-desktop {
+    display: block;
+    font-family: 'Crete Round', 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: 0.37px;
+    color: var(--bg-primary-color);
+    margin: 24px 0;
+  }
+
+  .about_me_title {
+    display: none;
+  }
+
+  .about_languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* end of about section */
+
+  /* footer section */
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .contact_title {
+    flex-basis: 400px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: left;
+  }
+
+  .contact_form {
+    flex-basis: calc(100vw - 420px);
+    justify-content: flex-start;
+  }
+
+  .contact_form input {
+    padding: 10px;
+  }
+
+  .contact_form button {
+    align-self: flex-start;
+  }
+
+  /* end footer section */
+}
