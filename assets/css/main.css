@@ -378,6 +378,7 @@ section */
 .about_me_title-desktop {
   display: none;
 }
+
 .about_container {
   display: grid;
   grid-template-columns: 1fr;
