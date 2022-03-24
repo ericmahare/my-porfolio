@@ -638,7 +638,12 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  .skills {
+    list-style-type: none;
+    text-align: left;
   }
 
   /* end of about section */
