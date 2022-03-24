@@ -74,6 +74,19 @@ section */
   letter-spacing: 0.37px;
   color: var(--bg-primary-color);
   margin-top: 90px;
+  position: relative;
+  animation: heading;
+  animation-duration: 5s;
+}
+
+@keyframes heading {
+  0% {
+    top: -150px;
+  }
+
+  100% {
+    top: 20px;
+  }
 }
 
 .headline_supporting_text {
@@ -84,6 +97,26 @@ section */
   line-height: 32px;
   color: #fff5e1;
   margin-top: 12px;
+  animation-name: headingText;
+  animation-duration: 7s;
+}
+
+@keyframes headingText {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .headline_description_text {
@@ -95,6 +128,8 @@ section */
   line-height: 24px;
   color: var(--main-white);
   margin: 12px 0;
+  animation-name: headingText;
+  animation-duration: 5s;
 }
 
 .social_media {
@@ -201,6 +236,7 @@ section */
   cursor: pointer;
   display: block;
   clear: both;
+  transition: all ease-in-out 1s;
 }
 
 .first_card_btn:hover {
@@ -356,6 +392,7 @@ section */
   bottom: 0;
   background-color: var(--bg-primary-color);
   cursor: pointer;
+  transition: all ease-in-out 1s;
 }
 
 .card_btn:hover {
@@ -747,7 +784,6 @@ textarea {
     order: 1;
     height: 100vh;
     flex-basis: 0.5rem;
-    margin-top: 80px;
   }
 
   .works_underline {
