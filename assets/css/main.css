@@ -236,6 +236,7 @@ section */
   cursor: pointer;
   display: block;
   clear: both;
+  transition: all ease-in-out 1s;
 }
 
 .first_card_btn:hover {
@@ -391,6 +392,7 @@ section */
   bottom: 0;
   background-color: var(--bg-primary-color);
   cursor: pointer;
+  transition: all ease-in-out 1s;
 }
 
 .card_btn:hover {
