@@ -644,6 +644,7 @@ textarea {
   .skills {
     list-style-type: none;
     text-align: left;
+    margin: 0 5rem;
   }
 
   /* end of about section */
