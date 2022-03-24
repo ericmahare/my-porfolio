@@ -9,6 +9,15 @@
 - HTML
 - CSS
 - Linter
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+- copy this link `https://github.com/ericmahare/my-porfolio.git`.
+- get the directory that you want to clone the repository.
+- open the command prompt in this directory.
+- write `git clone https://github.com/ericmahare/my-porfolio.git`.
+- go to the repository folder in your command prompt `cd my-porfolio`
 
 ## Authors
 

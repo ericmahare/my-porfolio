@@ -14,7 +14,17 @@
       <div class="logo">
         <a href="#">Eric Mahare</a>
       </div>
-      <nav class="nav_icon">
+      <nav class="nav">
+        <ul class="nav_list">
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">contact</a></li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/icons/Union.png" alt="union" />
+            </a>
+          </li>
+        </ul>
         <div class="nav_bars">
           <img src="./assets/images/icons/hamburger.png" alt="navbar icon" />
         </div>
@@ -23,13 +33,15 @@
     <!-- end of header section -->
     <!-- headline section -->
     <section id="headline">
-      <h1 class="headline_primary_text">Hey There. I’m Eric</h1>
-      <h4 class="headline_supporting_text">I’am a Software Developer</h4>
-      <p class="headline_description_text">
-        I can help you build a product , feature or website Look through some of
-        my work and experience! If you like what you see and have a project you
-        need coded, don’t hestiate to contact me.
-      </p>
+      <div class="headline_info">
+        <h1 class="headline_primary_text">Hey There. I’m Eric</h1>
+        <h4 class="headline_supporting_text">I’am a Software Developer</h4>
+        <p class="headline_description_text">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+      </div>
       <div class="social_media">
         <ul>
           <li>
@@ -63,14 +75,17 @@
     <!-- end of headline section -->
     <!-- works section -->
     <section id="works">
-      <h2 class="section_header">My Recent Works</h2>
+      <div class="section_header">
+        <h2 class="section_header_text">My Recent Works</h2>
+        <div class="works_underline"></div>
+      </div>
       <!-- card section -->
-      <div class="works_card_container">
-        <!-- first card  -->
-        <div class="first_card">
-          <div class="first_card_header">
-            <img src="./assets/images/fist_about_bg.jpg" alt="" />
-          </div>
+      <!-- first card  -->
+      <div class="first_card">
+        <div class="first_card_header">
+          <img src="./assets/images/fist_about_bg.jpg" alt="" />
+        </div>
+        <div class="first-card-info">
           <div class="first_card_title">
             <h3>Multi-Post Stories</h3>
           </div>
@@ -81,19 +96,21 @@
               ever since the 1500s, when an unknown printer took a standard
               dummy text.
             </p>
+            <div class="first_card_skill">
+              <ul class="first_card_skill_list">
+                <li>css</li>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button type="button" class="first_card_btn">See project</button>
           </div>
-          <div class="first_card_skill">
-            <ul class="first_card_skill_list">
-              <li>css</li>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-          </div>
-          <button type="button" class="first_card_btn">See project</button>
         </div>
-        <!-- end of first card -->
-        <!-- card  -->
+      </div>
+      <!-- end of first card -->
+      <div class="works_card_container">
+        <!-- second card  -->
         <div class="card">
           <div class="inner_card_container">
             <div class="card_title">
@@ -117,8 +134,13 @@
           </div>
           <button type="button" class="card_btn">See project</button>
         </div>
-        <!-- end of card -->
-        <!-- card  -->
+        <!-- desktop view -->
+        <div class="second_card">
+          <div class="inner_card_container"></div>
+          <button type="button" class="card_btn">See project</button>
+        </div>
+        <!-- end of second card -->
+        <!-- third card  -->
         <div class="card">
           <div class="inner_card_container">
             <div class="card_title">
@@ -142,8 +164,29 @@
           </div>
           <button type="button" class="card_btn">See project</button>
         </div>
-        <!-- end of card -->
-        <!-- card  -->
+        <!-- desktop view -->
+        <div class="third_card">
+          <div class="inner_card_container">
+            <div class="card_title">
+              <h3>Data Dashboard Healthcare</h3>
+            </div>
+            <div class="card_description">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="card_skill">
+              <ul class="card_skill_list">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end of third card -->
+        <!-- fourth card  -->
         <div class="card">
           <div class="inner_card_container">
             <div class="card_title">
@@ -167,8 +210,29 @@
           </div>
           <button type="button" class="card_btn">See project</button>
         </div>
-        <!-- end of card -->
-        <!-- card  -->
+        <!-- desktop view -->
+        <div class="fourth_card">
+          <div class="inner_card_container">
+            <div class="card_title">
+              <h3>Website Protfolio</h3>
+            </div>
+            <div class="card_description">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="card_skill">
+              <ul class="card_skill_list">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end of fourth card -->
+        <!-- fifth card  -->
         <div class="card">
           <div class="inner_card_container">
             <div class="card_title">
@@ -192,8 +256,29 @@
           </div>
           <button type="button" class="card_btn">See project</button>
         </div>
-        <!-- end of card -->
-        <!-- card  -->
+        <!-- desktop view -->
+        <div class="fifth_card">
+          <div class="inner_card_container">
+            <div class="card_title">
+              <h3>Profesional Art Printing Data More</h3>
+            </div>
+            <div class="card_description">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="card_skill">
+              <ul class="card_skill_list">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end of fifth card -->
+        <!-- sixth card  -->
         <div class="card">
           <div class="inner_card_container">
             <div class="card_title">
@@ -217,8 +302,29 @@
           </div>
           <button type="button" class="card_btn">See project</button>
         </div>
-        <!-- end of card -->
-        <!-- card  -->
+        <!-- desktop view -->
+        <div class="sixth_card">
+          <div class="inner_card_container">
+            <div class="card_title">
+              <h3>Data Dashboard Healthcare</h3>
+            </div>
+            <div class="card_description">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="card_skill">
+              <ul class="card_skill_list">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end of sixth card -->
+        <!-- seventh card  -->
         <div class="card">
           <div class="inner_card_container">
             <div class="card_title">
@@ -242,7 +348,28 @@
           </div>
           <button type="button" class="card_btn">See project</button>
         </div>
-        <!-- end of card -->
+        <!-- desktop view -->
+        <div class="seventh_card">
+          <div class="inner_card_container">
+            <div class="card_title">
+              <h3>Website Protfolio</h3>
+            </div>
+            <div class="card_description">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+            </div>
+            <div class="card_skill">
+              <ul class="card_skill_list">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end of seventh card -->
       </div>
       <!-- end of card section -->
     </section>
@@ -252,6 +379,7 @@
       <div class="about_container">
         <h3 class="about_me_title">About me</h3>
         <div class="about_info">
+          <h3 class="about_me_title-desktop">About me</h3>
           <div class="about_description">
             <p>
               Hello I’m a software developer! I can help you build a product ,
