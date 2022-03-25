@@ -643,6 +643,7 @@ textarea {
   .nav_list {
     display: flex;
     column-gap: 25px;
+    list-style: none;
   }
 
   .nav_bars {
