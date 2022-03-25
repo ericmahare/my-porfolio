@@ -10,6 +10,10 @@
 - CSS
 - Linter
 
+## Live Demo
+
+[Live Demo Link](https://623d64da936b75125a3d8df1--erikmahare.netlify.app/)
+
 ## Authors
 
 👤 **Eric Mahare**
