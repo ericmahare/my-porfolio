@@ -21,7 +21,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Live Demo Link](https://623d64da936b75125a3d8df1--erikmahare.netlify.app/)
+[Live Demo Link](https://erikmahare.netlify.app/)
 
 ## Authors
 
