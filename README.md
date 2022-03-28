@@ -19,9 +19,7 @@ To get a local copy up and running follow these simple example steps.
 - write `git clone https://github.com/ericmahare/my-porfolio.git`.
 - go to the repository folder in your command prompt `cd my-porfolio`
 
-## Live Demo
 
-[Live Demo Link](https://ericmahare.github.io/my-porfolio/)
 
 ## Authors
 
