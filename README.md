@@ -21,7 +21,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Live Demo Link](https://ericmahare.github.io/my-porfolio/)
+[View website](https://ericmahare.github.io/my-porfolio/)
 
 ## Authors
 
