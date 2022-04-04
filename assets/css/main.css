@@ -309,12 +309,7 @@ section */
   color: var(--main-white);
   height: 430px;
   width: 100%;
-  background-image: linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
-    url(../images/card_bg.jpg);
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../images/card_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -337,12 +332,7 @@ section */
   height: 430px;
   width: 100%;
   padding-top: 15%;
-  background-image: linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.7) 61.94%
-    ),
-    url(../images/third-card.jpg);
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.7) 61.94%), url(../images/third-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -354,12 +344,7 @@ section */
   height: 430px;
   width: 100%;
   padding-top: 15%;
-  background-image: linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.7) 61.94%
-    ),
-    url(../images/fourth-card.jpg);
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.7) 61.94%), url(../images/fourth-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -371,12 +356,7 @@ section */
   height: 430px;
   width: 100%;
   padding-top: 15%;
-  background-image: linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
-    url(../images/second-card.jpg);
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../images/second-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -388,12 +368,7 @@ section */
   height: 430px;
   width: 100%;
   padding-top: 15%;
-  background-image: linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.7) 61.94%
-    ),
-    url(../images/third-card.jpg);
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.7) 61.94%), url(../images/third-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -405,12 +380,7 @@ section */
   height: 430px;
   width: 100%;
   padding-top: 15%;
-  background-image: linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.7) 61.94%
-    ),
-    url(../images/fourth-card.jpg);
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.7) 61.94%), url(../images/fourth-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
