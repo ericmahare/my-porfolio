@@ -9,6 +9,7 @@ closeBtn.addEventListener('click', () => {
   position: fixed;
   top: -9999px;
   left: -9999px;
+  transition: all ease-out 0.5s;
 `;
 });
 
