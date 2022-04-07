@@ -6,6 +6,9 @@ const mobLinks = document.querySelectorAll('.mobile-link');
 const modal = document.querySelector('.project_modal');
 const modalbtn = document.querySelector('.mod-btn');
 const cardContainer = document.querySelector('.works_card_container');
+const form = document.querySelector('#form');
+const email = document.querySelector('#email');
+const messageBox = document.querySelector('.message-box');
 // get all projects
 const projects = [
   {
@@ -241,4 +244,33 @@ window.addEventListener('click', (e) => {
 
 modalbtn.addEventListener('click', () => {
   modal.style.display = 'block';
+});
+
+// form validation
+const similarTask = () => {
+  setTimeout(() => {
+    messageBox.innerHTML = '';
+  }, 3000);
+  messageBox.style.visibility = 'visible';
+};
+
+const formValidation = () => {
+  if (email.value !== email.value.toLowerCase()) {
+    messageBox.classList.remove('success');
+    messageBox.classList.add('error');
+    messageBox.innerHTML = '<p>All email input values should be in lowercase </p>';
+    email.value = '';
+    similarTask();
+  } else {
+    messageBox.classList.remove('error');
+    messageBox.classList.add('success');
+    messageBox.innerHTML = '<p>Form submited successfully</p>';
+    similarTask();
+    form.submit();
+  }
+};
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  formValidation();
 });
