@@ -107,6 +107,29 @@ window.addEventListener('DOMContentLoaded', () => {
     message.value = data.message;
     userName.value = data.name;
   }
+  // local storage function
+  const storeToLocalStorage = () => {
+    const data = {
+      name: userName.value,
+      email: email.value,
+      message: message.value,
+    };
+    const storageData = JSON.stringify(data);
+    localStorage.setItem('user', storageData);
+  };
+
+  email.addEventListener('change', () => {
+    storeToLocalStorage();
+  });
+
+  userName.addEventListener('change', () => {
+    storeToLocalStorage();
+  });
+
+  message.addEventListener('change', () => {
+    storeToLocalStorage();
+  });
+
   let result = '';
   projects.forEach((project) => {
     const {
@@ -270,17 +293,6 @@ const similarTask = () => {
   messageBox.style.visibility = 'visible';
 };
 
-// local storage function
-const storeToLocalStorage = () => {
-  const data = {
-    name: userName.value,
-    email: email.value,
-    message: message.value,
-  };
-  const storageData = JSON.stringify(data);
-  localStorage.setItem('user', storageData);
-};
-
 const formValidation = () => {
   if (email.value !== email.value.toLowerCase()) {
     messageBox.classList.remove('success');
@@ -289,8 +301,6 @@ const formValidation = () => {
     email.value = '';
     similarTask();
   } else {
-    // store data in local storage
-    storeToLocalStorage();
     // submit the form
     messageBox.classList.remove('error');
     messageBox.classList.add('success');
