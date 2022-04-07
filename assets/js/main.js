@@ -8,6 +8,8 @@ const modalbtn = document.querySelector('.mod-btn');
 const cardContainer = document.querySelector('.works_card_container');
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
+const userName = document.querySelector('#name');
+const message = document.querySelector('#message');
 const messageBox = document.querySelector('.message-box');
 // get all projects
 const projects = [
@@ -91,6 +93,20 @@ const projects = [
 // add projects dynamically
 
 window.addEventListener('DOMContentLoaded', () => {
+  // get local storage form data
+  if (localStorage.getItem('user') === null) {
+    email.value = '';
+    message.value = '';
+    userName.value = '';
+  } else {
+    const localData = localStorage.getItem('user');
+    const data = JSON.parse(localData);
+
+    // set localstorage data to the input values
+    email.value = data.email;
+    message.value = data.message;
+    userName.value = data.name;
+  }
   let result = '';
   projects.forEach((project) => {
     const {
@@ -254,6 +270,17 @@ const similarTask = () => {
   messageBox.style.visibility = 'visible';
 };
 
+// local storage function
+const storeToLocalStorage = () => {
+  const data = {
+    name: userName.value,
+    email: email.value,
+    message: message.value,
+  };
+  const storageData = JSON.stringify(data);
+  localStorage.setItem('user', storageData);
+};
+
 const formValidation = () => {
   if (email.value !== email.value.toLowerCase()) {
     messageBox.classList.remove('success');
@@ -262,6 +289,9 @@ const formValidation = () => {
     email.value = '';
     similarTask();
   } else {
+    // store data in local storage
+    storeToLocalStorage();
+    // submit the form
     messageBox.classList.remove('error');
     messageBox.classList.add('success');
     messageBox.innerHTML = '<p>Form submited successfully</p>';
@@ -269,7 +299,7 @@ const formValidation = () => {
     form.submit();
   }
 };
-
+// submit for event
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   formValidation();
