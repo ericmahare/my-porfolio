@@ -788,6 +788,22 @@ textarea {
   background-color: #fbf8f7;
 }
 
+.message-box {
+  font-weight: bold;
+  font-size: 1.1rem;
+  visibility: hidden;
+  transition: all ease-in-out 0.5s;
+}
+
+.error {
+  color: #ff0000;
+}
+
+.success {
+  color: rgb(18, 176, 18);
+  font-size: 1.1rem;
+}
+
 .contact_form button {
   font-weight: 700;
   font-size: 17px;
